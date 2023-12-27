@@ -105,3 +105,7 @@ h2, h3, h4, h5, h6 {
     font-family:   "Palatino Linotype", "Palatino", "Palladio", "Book Antiqua", "Apple Garamond", "URW Palladio L", "Noto Serif", "Droid Serif", serif;
     border-bottom: thin solid black;
 }
+
+abbr:hover {
+            cursor: help;
+        }
