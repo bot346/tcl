@@ -1,78 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation and Content View</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        #navigation {
-            width: 20%;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        #content-view {
-            flex: 1;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-        }
-    </style>
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An ongoing book about digital design on FPGAs, with a library of parts.">
+<title>FPGA Design Elements</title>
 </head>
 <body>
 
-    <div id="navigation">
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="#" onclick="showContent('content1')">Content 1</a></li>
-            <li><a href="#" onclick="showContent('content2')">Content 2</a></li>
-            <li><a href="#" onclick="showContent('content3')">Content 3</a></li>
-        </ul>
-    </div>
+<h1><center>FPGA Design Elements</center></h1>
 
-    <div id="content-view">
-        <h2>Content View</h2>
-        <div id="content1">
-            <h3>Content 1</h3>
-            <p>This is the content for section 1.</p>
-        </div>
+<p><center><b>Charles Eric LaForest, PhD.</b>
+<br><a href="http://fpgacpu.ca/gateforge/index.html">GateForge Consulting, Ltd.</a></center></p>
 
-        <div id="content2" style="display: none;">
-            <h3>Content 2</h3>
-            <p>This is the content for section 2.</p>
-        </div>
+<center>
+<p class="bordered"><em>This is a continually evolving document. Please email any
+feedback to <a href="mailto:eric@fpgacpu.ca?subject=FPGA%20Design%20Elements">eric@fpgacpu.ca</a> or Twitter <a
+href="https://twitter.com/elaforest">@elaforest</a> or join the <a href="https://discordapp.com/invite/bWBdwVD">Discord server</a>.</em></p>
+</center>
 
-        <div id="content3" style="display: none;">
-            <h3>Content 3</h3>
-            <p>This is the content for section 3.</p>
-        </div>
-    </div>
+<h2>Introduction</h2>
 
-    <script>
-        function showContent(contentId) {
-            // Hide all content views
-            document.querySelectorAll('#content-view > div').forEach(function(content) {
-                content.style.display = 'none';
-            });
+<ul>
+<li> <a href="./outline.html">Outline</a>
+<li> <a href="./legal.html">Licence and Disclaimer</a>
+</ul>
 
-            // Show the selected content
-            document.getElementById(contentId).style.display = 'block';
-        }
-    </script>
+<h2>References</h2>
 
-</body>
+<ul>
+<li> <a href="./verilog.html">Verilog Coding Standard</a>
+<li> <a href="./system.html">System Design Standard</a>
+<li> <a href="./handshake.html">Rules for Ready/Valid Handshakes</a>
+<li> <a href="./links.html">Useful Links</a>
+<li> <a href="./reading.html">References and Reading List</a>
+</ul>
+
+<a name="tools"></a>
+<body>
 </html>
