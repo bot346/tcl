@@ -3,68 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Simple Website</title>
+    <title>Navigation and Content View</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        header {
-            background-color: #f2f2f2;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav {
+            margin: 0;
+            padding: 0;
             display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px;
         }
 
-        nav a {
-            color: white;
+        #navigation {
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #content-view {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: #fff;
             text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-        }
-
-        section {
-            margin: 20px 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Your Simple Website</h1>
-    </header>
+    <div id="navigation">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#" onclick="showContent('content1')">Content 1</a></li>
+            <li><a href="#" onclick="showContent('content2')">Content 2</a></li>
+            <li><a href="#" onclick="showContent('content3')">Content 3</a></li>
+        </ul>
+    </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div id="content-view">
+        <h2>Content View</h2>
+        <div id="content1">
+            <h3>Content 1</h3>
+            <p>This is the content for section 1.</p>
+        </div>
 
-    <section>
-        <h2>Welcome to Your Simple Website</h2>
-        <p>This is a basic HTML template for your website. Feel free to customize and add more content!</p>
-    </section>
+        <div id="content2" style="display: none;">
+            <h3>Content 2</h3>
+            <p>This is the content for section 2.</p>
+        </div>
 
-    <footer>
-        &copy; 2023 Your Simple Website
-    </footer>
+        <div id="content3" style="display: none;">
+            <h3>Content 3</h3>
+            <p>This is the content for section 3.</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            // Hide all content views
+            document.querySelectorAll('#content-view > div').forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Show the selected content
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
