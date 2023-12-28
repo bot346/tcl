@@ -23,7 +23,7 @@
 a:hover {
     background-color: #f0f0f0;
 }
-
+/*
 code {
     font-family: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Roboto Mono", "Droid Sans Mono", monospace;
 }
@@ -35,7 +35,7 @@ pre {
     padding: 1em;
     overflow-x: auto;
 }
-
+*/
 body { 
     font-family: Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, Roboto, "Noto Sans", "Droid Sans", sans-serif;
     max-width:   80em;
