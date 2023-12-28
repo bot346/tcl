@@ -102,9 +102,14 @@ h1 {
     border-bottom: thick solid black;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
     font-family:   "Palatino Linotype", "Palatino", "Palladio", "Book Antiqua", "Apple Garamond", "URW Palladio L", "Noto Serif", "Droid Serif", serif;
     border-bottom: thin solid black;
+}
+
+h3, h4, h5, h6 {
+    font-family:   "Palatino Linotype", "Palatino", "Palladio", "Book Antiqua", "Apple Garamond", "URW Palladio L", "Noto Serif", "Droid Serif", serif;
+
 }
 
 abbr:hover {

@@ -10,17 +10,33 @@
 
 <p class="inline bordered"><b><a href="./index.html">index</a></b></p>
 
+<p> </p>
+
 <h1>Tcl Programming Example</h1>
 
-<p>This is a simple HTML page with a Tcl script embedded.</p>
+<h3>Example 1</h3>
+<p><b>Question:</b> A sum of money at simple interest amounts to Rs. 815 in 3 years and to Rs. 854 in 4 years. The sum is:</p>
 
-<pre>
-    <code>
-    # Tcl code goes here
-    set greeting "Hello, World!"
-    puts $greeting
-    </code>
+<pre style="text-align: left;">
+<code>
+#given
+set SI_3yrs 815
+set SI_4yrs 815
+
+# interest per year calculation
+set interest_per_year [expr {$SI_4yrs-$SI_3yrs}]
+
+# what is the interest collected for 3 years 
+set interest_for_3yrs [expr {$interest_per_year*3}]
+
+# to get principal subtract maturity amount with interest 
+set principal [expr {$SI_3yrs-$interest_for_3yrs}]
+
+puts &quot;principal amount is : $principal&quot; 
+
+</code>
 </pre>
+
 
 <details>
     <summary>Click to reveal more information</summary>
