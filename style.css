@@ -31,7 +31,7 @@ code {
 pre {
     font-family: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Roboto Mono", "Droid Sans Mono", monospace;
     border: thin solid black;
-    background-color: #C0C0C0;
+    background-color: #F5F5F5;
     padding: 1em;
     overflow-x: auto;
 }
