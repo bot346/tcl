@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+<main>
+<p class="inline bordered"><b><a href="./index.html">index</a></b></p>
+
+<p> </p>
+
+<h1>Variable</h1>
+
+<p><b></b></p>
+<dt style="text-align: start;color: rgb(0, 0, 0);font-size: medium;"><b><span style="background-color: rgb(250, 197, 28);"><em>set   var_name   value </em></span></b></dt>
+<dd style="text-align: start;color: rgb(0, 0, 0);font-size: medium;">If <em><code>value</code></em> is specified, then the contents of the variable <em><code>var_name&nbsp;</code></em>are set equal to <em><code>value</code></em> .</dd>
+<dd style="text-align: start;color: rgb(0, 0, 0);font-size: medium;">If <em><code>var_name </code></em>consists only of alphanumeric characters, and no parentheses, it is a scalar variable.</dd>
+<dd style="text-align: start;color: rgb(0, 0, 0);font-size: medium;">If <em><code>varName</code></em> has the form <em><code>var_name</code></em><em><code>(index)</code></em> , it is a member of an associative array.</dd>
+
+
+<pre style="text-align: left;">
+<code>
+# x is variable
+set X "This is a string"
+# y is variable
+set Y 1.24
+# The dollar sign tells Tcl to use the value of the variable - in this case X or Y.
+puts $X
+puts $Y
+#passing both the variables in single puts 
+puts "$X $Y"
+
+</code>
+</pre>
+
+  <!--start highlight code --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+     <!--end highlight code --> 
+</main>	
+</body>
+</html>

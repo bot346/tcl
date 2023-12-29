@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Increment and Decrement</title>
+</head>
+<body>
+<main>
+<p class="inline bordered"><b><a href="./index.html">index</a></b></p>
+
+
+<p> </p>
+    
+<h1> Increment and Decrement</h1>
+
+<p>This is a page with a Tcl script that demonstrates the use of the expr command.</p>
+
+<h2> Increment and Decrement</h2>
+
+<pre> 
+<code>
+set count 5
+
+incr count ;# Increment by 1
+puts "After incrementing: $count"
+###OUTPUT###
+6
+
+set count [expr $count - 1] ;# Decrement by 1
+puts "After decrementing: $count"
+###OUTPUT###
+4
+
+
+</code>
+</pre>
+
+
+
+
+
+  <!--start highlight code --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+     <!--end highlight code --> 
+ </main>   
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expressions</title>
+    <title>foreach loop</title>
 </head>
 <body>
 <main>
@@ -13,26 +13,35 @@
 
 <p> </p>
     
-<h1>Expressions</h1>
+<h1>foreach loop</h1>
 
 <p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
 
-<h2>Addition of numbers</h2>
+<h2>foreach loop</h2>
 
 <pre> 
     <code>
-    # Tcl code using the expr command
-    set num1 10
-    set num2 5
+set fruits {"Apple" "Banana" "Orange"}
 
-	#Addition
-    set result [expr {$num1 + $num2}]
-    puts "Addition result: $result"
+foreach fruit $fruits {
+    puts "Fruit: $fruit"
+}
 
 </code>
 </pre>
 
+<h2>for loop for same question</h2>
 
+<pre> 
+<code>
+set fruits {"Apple" "Banana" "Orange"}
+
+for {set i 0} {$i < [llength $fruits]} {incr i} {
+    puts "Fruit: [lindex $fruits $i]"
+}
+
+</code>
+</pre>
 
 <p> CSS stands for <abbr title="Cascading Style Sheets" >CSS</abbr></p>
 

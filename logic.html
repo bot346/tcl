@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic operators</title>
+</head>
+<body>
+<main>
+<p class="inline bordered"><b><a href="./index.html">index</a></b></p>
+
+
+<p> </p>
+    
+<h1>Logic operators</h1>
+
+<p>This is a page with a Tcl script that demonstrates the use of the expr command.</p>
+
+<h2>Logic operators</h2>
+<p><strong><span style="background-color: rgb(250, 197, 28);">&amp;&amp;</span></strong> Called Logical AND operator. If both the operands are non-zero, then condition becomes true.</p>
+<p><strong><span style="background-color: rgb(250, 197, 28);">||</span></strong> Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.</p>
+<p><strong><span style="background-color: rgb(250, 197, 28);">!</span></strong> Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</p>
+<pre> 
+<code>
+set isAdult 1
+set hasLicense 0
+
+if {$isAdult && $hasLicense} {
+    puts "You are an adult with a license"
+} elseif {$isAdult || $hasLicense} {
+    puts "You are either an adult or have a license"
+} else {
+    puts "You are neither an adult nor have a license"
+}
+
+
+</code>
+</pre>
+
+
+
+
+
+  <!--start highlight code --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+     <!--end highlight code --> 
+ </main>   
+</body>
+</html>

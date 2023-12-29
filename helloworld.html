@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tcl Programming Example</title>
+</head>
+<body>
+<main>
+<p class="inline bordered"><b><a href="./index.html">index</a></b></p>
+
+<p> </p>
+
+<h1>Hello World</h1>
+
+<p style="text-align: left;">To print simple text just use<span style="background-color: rgb(250, 197, 28);"> <strong>puts</strong> </span>command and use quotes to give desired text</p>
+
+<pre style="text-align: left;">
+<code>
+# use hastag at beginning for commenting a line 
+
+puts "Hello, World"    
+
+puts "inline comment"    ;# This is a comment after the command. if you miss semicolon(;) then *ERROR* will pop up
+
+</code>
+</pre>
+
+<p style="text-align: left;">can we print without quotes? <span style="background-color: rgb(250, 197, 28);"> <strong>yes,</strong> </span>you can use braces to do so</p>
+
+
+<pre> 
+<code>
+
+puts {Hello, World - In Braces}
+
+# Words don't need to be quoted unless they contain white space:
+puts HelloWorld
+
+</code>
+</pre> 
+
+  <!--start highlight code --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+     <!--end highlight code --> 
+	 
+</main>
+</body>
+</html>

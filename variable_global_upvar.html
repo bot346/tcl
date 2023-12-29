@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global and Local variables</title>
+</head>
+<body>
+<main>
+<p class="inline bordered"><b><a href="./index.html">index</a></b></p>
+
+<p> </p>
+
+<h1>Global and Local variables</h1>
+
+<h2>Does the code work?</h2>
+
+<pre style="text-align: left;">
+<code>
+set alpha 1
+
+proc myproc {} {
+    puts $alpha
+}
+
+myproc
+
+</code>
+</pre>
+
+<p>No!!!, Above code doesn't work because the two alphas are in different scopes.</p>
+ <p>  The command <code>set alpha 1</code> creates a variable in the global scope </p>
+ <p>  command <code>puts $alpha</code> is executed in scope that is created when command <code>myproc</code> executes. </p>
+ <p> The two scopes are distinct. This means that when <code>puts $alpha</code> tries to look up the name <code>alpha</code>, it doesn&apos;t find any such variable. </p>
+
+<h2>global</h2>
+
+<p>The global command is used to create or access global variables. Global variables can be accessed from any part of the script.</p>
+
+<pre> 
+<code>
+
+# Example of using global command
+set globalVar 10
+
+proc myProcedure {} {
+    global globalVar
+    puts "Inside procedure: \$globalVar = $globalVar"
+}
+
+myProcedure
+puts "Outside procedure: \$globalVar = $globalVar"
+
+</code>
+</pre> 
+
+<h2>upvar</h2>
+
+<p>The upvar command is used to create a local variable that refers to a variable in an outer scope, allowing you to modify variables in calling procedures.</p>
+
+
+<pre> 
+<code>
+
+# Example of using upvar command
+set outerVar 5
+
+proc myProcedure {innerVar} {
+    upvar $innerVar localVar
+    puts "Inside procedure: \$localVar = $localVar"
+    set localVar [expr $localVar + 1]
+}
+
+myProcedure outerVar
+puts "Outside procedure: \$outerVar = $outerVar"
+
+</code>
+</pre> 
+
+
+
+
+  <!--start highlight code --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+     <!--end highlight code --> 
+</main>
+</body>
+</html>
