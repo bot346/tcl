@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+<main>
+<p class="inline bordered"><b><a href="./index.html">index</a></b></p>
+
+
+<p> </p>
+    
+<h1>Conditional statements</h1>
+
+<h2>Basic if statement</h2>
+<p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
+<pre> 
+    <code>
+set age 20
+
+if {$age >= 18} {
+    puts "You are an adult."
+}
+
+</code>
+</pre>
+
+<h2>if-else statement</h2>
+<p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
+<pre> 
+    <code>
+set temperature 25
+
+if {$temperature > 30} {
+    puts "It's a hot day."
+} else {
+    puts "It's not very hot today."
+}
+
+</code>
+</pre>
+
+<h2>if-elseif-else statement</h2>
+<p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
+<pre> 
+    <code>
+set score 75
+
+if {$score >= 90} {
+    puts "A"
+} elseif {$score >= 80} {
+    puts "B"
+} elseif {$score >= 70} {
+    puts "C"
+} else {
+    puts "Fail"
+}
+
+</code>
+</pre>
+
+<h2>Nested conditions</h2>
+<p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
+<pre> 
+    <code>
+set x 10
+
+if {$x > 0} {
+    if {$x % 2 == 0} {
+        puts "$x is a positive even number."
+    } else {
+        puts "$x is a positive odd number."
+    }
+} else {
+    puts "$x is not a positive number."
+}
+
+</code>
+</pre>
+
+<h2>switch conditions</h2>
+<p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
+<pre> 
+    <code>
+set dayOfWeek "Monday"
+
+switch $dayOfWeek {
+    "Monday" {
+        puts "It's the start of the week."
+    }
+    "Friday" {
+        puts "It's almost the weekend."
+    }
+    default {
+        puts "It's a regular day."
+    }
+}
+
+</code>
+</pre>
+
+
+  <!--start highlight code --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+     <!--end highlight code --> 
+ </main>   
+</body>
+</html>
