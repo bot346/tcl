@@ -9,7 +9,8 @@
 <body>
 <main>
 <p class="inline bordered"><b><a href="./index.html">index</a></b></p>
-
+<p class="inline bordered"><b><a href="./file1.html"><</a></b></p>
+<p class="inline bordered"><b><a href="./file3.html">></a></b></p>
 
 <p> </p>
     
@@ -21,8 +22,11 @@
 
 <pre> 
     <code>
-    # sample
-    
+if {[file exists "filename.txt"]} {
+    puts "File exists!"
+} else {
+    puts "File does not exist."
+}
 </code>
 </pre>
 

@@ -13,19 +13,43 @@
 
 <p> </p>
     
-<h1>Sample</h1>
+<h1>Procs</h1>
 
 <p>This is a simple HTML page with a Tcl script that demonstrates the use of the Sample command.</p>
 
-<h2>Sample</h2>
+<h2>Procs
+</h2>
+ 
+ 
 
-<pre> 
-    <code>
-    # sample
+<pre><code>
+proc procedureName {argument} {
+   # code
+}
+
+#calling the proc
+set aurgument value
+puts [procedureName $aurgument]
+</code><pre>
+<pre><code>
+# Define a procedure named "sum_numbers"
+proc sum_numbers {num1 num2} {
+    # Calculate the sum of num1 and num2
+    set result [expr $num1 + $num2]
+    return $result
+}
+
+# Call the procedure with two numbers
+set number1 5
+set number2 7
+set sum_result [sum_numbers $number1 $number2]
+
+# Display the result
+puts "The sum of $number1 and $number2 is: $sum_result"
     
-</code>
-</pre>
+</code></pre>
 
+<iframe src = "https://onecompiler.com/tcl/3zy7yh3kh" width = "100%" height = 600 frameborder = 0 > </iframe>
 
   <!--start highlight code --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">

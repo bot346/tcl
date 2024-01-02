@@ -13,18 +13,108 @@
 
 <p> </p>
     
-<h1>Sample</h1>
+<h1>Boolean</h1>
 
 <p>This is a simple HTML page with a Tcl script that demonstrates the use of the Sample command.</p>
 
-<h2>Sample</h2>
+<h2>Boolean</h2>
 
-<pre> 
-    <code>
-    # sample
+
+<p>Boolean expressions and values in Tcl are typically <mark>used in conditional statements to control the flow of a program</mark>. Here are some examples illustrating the use of boolean expressions and values: </p>
+<h3>Boolean Variables</h3>
+<pre><code>
+set num1 10
+set num2 20
+
+set isGreaterThan [expr $num1 > $num2]
+puts "Is num1 greater than num2? $isGreaterThan"
+
     
-</code>
-</pre>
+</code></pre>
+
+<h3>Basic Boolean Expressions</h3>
+
+<pre><code>
+set x 5
+set y 10
+
+if {$x < $y} {
+    puts "$x is less than $y"
+} else {
+    puts "$x is not less than $y"
+}
+
+    
+</code></pre>
+<h3>Logical AND (&&) and OR (||)</h3>
+
+<pre><code>
+set isAdult 1
+set hasLicense 0
+
+if {$isAdult && $hasLicense} {
+    puts "You are an adult with a license."
+} elseif {$isAdult || $hasLicense} {
+    puts "You are either an adult or have a license."
+} else {
+    puts "You are neither an adult nor have a license."
+}
+
+    
+</code></pre>
+<h3>Negation (!)</h3>
+<pre><code>
+set isStudent 1
+
+if {!$isStudent} {
+    puts "You are not a student."
+} else {
+    puts "You are a student."
+}
+
+    
+</code></pre>
+<h3>Boolean Variables</h3>
+<pre><code>
+set isSunny 1
+set isRaining 0
+
+if {$isSunny} {
+    puts "It's a sunny day!"
+}
+
+if {!$isRaining} {
+    puts "It's not raining."
+}
+
+    
+</code></pre>
+<h3>Using expr for Complex Expressions</h3>
+<pre><code>
+set age 25
+
+if {[expr $age >= 18 && $age <= 30]} {
+    puts "You are a young adult."
+} else {
+    puts "You are not a young adult."
+}
+
+    
+</code></pre>
+<h3>Ternary Operator for Boolean Assignments</h3>
+<pre><code>
+set score 85
+set isPass [expr $score >= 60 ? 1 : 0]
+
+puts "Did you pass the exam? $isPass"
+
+</code></pre>
+
+
+<iframe src = "https://onecompiler.com/tcl/" width = "100%" height = 600 frameborder = 0 > </iframe>
+
+
+
 
 
   <!--start highlight code --> 

@@ -9,7 +9,8 @@
 <body>
 <main>
 <p class="inline bordered"><b><a href="./index.html">index</a></b></p>
-
+<p class="inline bordered"><b><a href="./file2.html"><</a></b></p>
+<p class="inline bordered"><b><a href="./regex1.html">></a></b></p>
 
 <p> </p>
     
@@ -21,7 +22,12 @@
 
 <pre> 
     <code>
-    # sample
+if {[file exists "file_to_delete.txt"]} {
+    file delete "file_to_delete.txt"
+    puts "File deleted."
+} else {
+    puts "File not found."
+}
     
 </code>
 </pre>

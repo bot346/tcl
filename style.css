@@ -20,7 +20,7 @@
 
 .inline.bordered {}
 
-
+a { color: #000; }
 
 a:visited {
   color: #000000;
@@ -89,21 +89,8 @@ hr {
 }
 
 img {
-    float:  right;
-    margin: 0em 1em 1em 1em;
-    width:  33%;
-}
-
-img.left {
-    float:  left;
-    margin: 1em 1em 1em 1em;
-    width:  63%;
-}
-
-img.full {
-    float:  left;
-    margin: 0em 0em 0em 0em;
-    width:  100%;
+	width : 100%;
+    border-radius: 10px;
 }
 
 table {
@@ -146,7 +133,7 @@ h1 {
 }
 
 h2 {
-    font-family:   "Palatino Linotype", "Palatino", "Palladio", "Book Antiqua", "Apple Garamond", "URW Palladio L", "Noto Serif", "Droid Serif", serif;
+    font-family:   "Poppins", sans-serif;
     border-bottom: thin solid black;
 
 }
@@ -154,14 +141,14 @@ h2 {
 
 
 h3, h4, h5, h6 {
-    font-family:   "Palatino Linotype", "Palatino", "Palladio", "Book Antiqua", "Apple Garamond", "URW Palladio L", "Noto Serif", "Droid Serif", serif;
+    font-family:   "Poppins", sans-serif;
 	padding: 0 5px;
 	margin: 0;
 	display: inline-block;
 	background:linear-gradient(
 		to bottom,
-		transparent 70%,
-		#b2e8e8 50%
+		transparent 50%,
+		#F4D03F 50%
 	);
 
 
@@ -175,5 +162,12 @@ mark {
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.5em;
+}
+
+codee {
+  background-color: #f2f2f2; /* Grey background color */
+  color: #ff0000; /* Red text color */
+  padding: 2px 4px; /* Optional padding for better appearance */
+  border-radius: 4px; /* Optional border radius for rounded corners */
 }
 

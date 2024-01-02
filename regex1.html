@@ -21,11 +21,19 @@
 
 <pre> 
     <code>
-    # sample
-    
+set text "Hello, World!"
+set pattern "World"
+if {[regexp $pattern $text]} {
+    puts "Found 'World' in the text."
+} else {
+    puts "Did not find 'World' in the text."
+}
 </code>
 </pre>
 
+<h2>Practice your skill here</h2>
+
+<iframe src = "https://onecompiler.com/tcl/3zy22vm6w" width = "100%" height = 600 frameborder = 0 > </iframe>
 
   <!--start highlight code --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">

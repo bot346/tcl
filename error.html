@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expressions</title>
+    <title>Error Handling</title>
 </head>
 <body>
 <main>
 <p class="inline bordered"><b><a href="./index.html">index</a></b></p>
-<p class="inline bordered"><b><a href="./intro.html"> &lt;prev </a></b></p>
-<p class="inline bordered"><b><a href="./variable.html">next></a></a></b></p>
+<p class="inline bordered"><b><a href="./regex2.html"> &lt;prev </a></b></p>
+
 
 <p> </p>
     
-<h1>Expressions</h1>
+<h1>Error Handling</h1>
 
-<p>This is a simple HTML page with a Tcl script that demonstrates the use of the expr command.</p>
+<p>This is a simple HTML page with a Tcl script that demonstrates the use of the <codee>catch</codee> command.</p>
 
-<h2>Addition</h2>
+<h2>Zero Division Error</h2>
 
-<pre> 
-    <code>
-    # sample
-    
-</code>
-</pre>
+<pre><code>
+#simple division proc
+proc division {} {
+  set x 11
+  set y 0
+  set z [expr $x / $y]
+}
+
+# catch will give result in 1 or 0 format 
+# if result is 1 then there is error
+# if result is 0 then there is no error
+set result [catch division error_msg]
+puts "$result"
+
+if {$result != 0} {
+    puts "Error: $error_msg"
+} else {
+    puts "Result: [division]"
+}   
+</code></pre>
 
 <iframe src = "https://onecompiler.com/tcl/" width = "100%" height = 600 frameborder = 0 > </iframe>
 

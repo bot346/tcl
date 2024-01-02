@@ -9,7 +9,8 @@
 <body>
 <main>
 <p class="inline bordered"><b><a href="./index.html">index</a></b></p>
-
+<p class="inline bordered"><b><a href="./procs.html"><</a></b></p>
+<p class="inline bordered"><b><a href="./file2.html">></a></b></p>
 
 <p> </p>
     
@@ -21,11 +22,53 @@
 
 <pre> 
     <code>
-    # sample
+# open and close
+set fileHandle [open "filename.txt" mode]
+# mode "r" (read), "w" (write), "a" (append), or "b" (binary mode)
+# Perform operations on the file
+close $fileHandle
     
 </code>
 </pre>
 
+<pre> 
+    <code>
+# reading file 
+
+set fileHandle [open "filename.txt" "r"]
+while {[gets $fileHandle line] >= 0} {
+    # Process each line
+    puts $line
+}
+close $fileHandle
+
+# Alternatively, you can use the read command to read the entire contents of a file into a variable:
+set fileHandle [open "filename.txt" "r"]
+set fileContents [read $fileHandle]
+close $fileHandle
+    
+</code>
+</pre>
+
+<pre> 
+    <code>
+# writing file
+
+set fileHandle [open "output.txt" "w"]
+puts $fileHandle "This is a line of text."
+close $fileHandle
+    
+</code>
+</pre>
+
+<pre> 
+    <code>
+set fileHandle [open "existing_file.txt" "a"]
+puts $fileHandle "This data will be appended."
+close $fileHandle
+    
+</code>
+</pre>
 
   <!--start highlight code --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
